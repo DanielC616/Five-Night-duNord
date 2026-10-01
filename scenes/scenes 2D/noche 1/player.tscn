@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://dq45vsb0sqbql"]
+
+[ext_resource type="Script" uid="uid://q5wid4d26xc4" path="res://scenes/scenes 2D/noche 1/player.gd" id="1_2kg20"]
+[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="1_8yiby"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2kg20"]
+size = Vector2(53, 54)
+
+[node name="player" type="CharacterBody2D" unique_id=1876632931]
+collision_layer = 2
+script = ExtResource("1_2kg20")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=788518106]
+position = Vector2(1, -1)
+scale = Vector2(0.4609375, 0.4609375)
+texture = ExtResource("1_8yiby")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2637357]
+position = Vector2(1, -1)
+shape = SubResource("RectangleShape2D_2kg20")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1773732524]
+zoom = Vector2(3, 3)
+
+[node name="Label" type="Label" parent="." unique_id=1175680721]
+z_index = 100
+offset_left = 98.0
+offset_top = -98.0
+offset_right = 170.0
+offset_bottom = -49.0
+text = "Puntos: 0
+"
