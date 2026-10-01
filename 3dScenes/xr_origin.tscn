@@ -3,6 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://l2n30mpbkdyw" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_hand_low.tscn" id="1_67pn5"]
 [ext_resource type="PackedScene" uid="uid://njx823gyk04n" path="res://addons/godot-xr-tools/hands/scenes/highpoly/left_hand.tscn" id="2_5hndc"]
 
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_jlijp"]
+
 [node name="XROrigin3D" type="XROrigin3D" unique_id=1181782419]
 
 [node name="XRCamera3D" type="XRCamera3D" parent="." unique_id=1653106213]
@@ -11,8 +13,15 @@
 tracker = &"right_hand"
 
 [node name="RightHand" parent="RightHand" unique_id=1873397567 instance=ExtResource("1_67pn5")]
+visible = false
 
 [node name="LeftHand" type="XRController3D" parent="." unique_id=1896185288]
 tracker = &"left_hand"
 
 [node name="LeftHand" parent="LeftHand" unique_id=1514047572 instance=ExtResource("2_5hndc")]
+visible = false
+
+[node name="MeshReferencia(borrardespues)" type="MeshInstance3D" parent="." unique_id=1781491634]
+transform = Transform3D(0.6906986, 0, 0, 0, 1.0070573, 0, 0, 0, 0.7078715, 0, -0.46242255, 0)
+visible = false
+mesh = SubResource("CapsuleMesh_jlijp")
