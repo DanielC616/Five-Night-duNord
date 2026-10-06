@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dawfdful5xw4f"]
+
+[ext_resource type="Script" uid="uid://cll27cxwdrmqq" path="res://node.gd" id="1_lbiw5"]
+
+[node name="Mapa" type="Node" unique_id=2027206548]
+
+[node name="Node" type="Node" parent="." unique_id=745508282]
+script = ExtResource("1_lbiw5")
