@@ -1,5 +1,7 @@
 extends Node
 
 class_name NodoMapa
-var next:NodoMapa = null
-var animatronics_contained:Array = []
+var next:NodoMapa
+
+func _init() -> void:
+	next= null

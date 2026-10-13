@@ -1,8 +1,13 @@
 [gd_scene format=3 uid="uid://dawfdful5xw4f"]
 
 [ext_resource type="Script" uid="uid://cll27cxwdrmqq" path="res://node.gd" id="1_lbiw5"]
+[ext_resource type="Script" uid="uid://crht04detghcq" path="res://nodo_mapa.gd" id="2_qgw4m"]
 
 [node name="Mapa" type="Node" unique_id=2027206548]
 
 [node name="Node" type="Node" parent="." unique_id=745508282]
 script = ExtResource("1_lbiw5")
+
+[node name="NodoMapa" type="Node" parent="." unique_id=1164773691]
+script = ExtResource("2_qgw4m")
+metadata/_custom_type_script = "uid://cll27cxwdrmqq"
