@@ -1,7 +1,9 @@
 extends Node
 
 class_name NodoMapa
-var next:NodoMapa
+var nextA:NodoMapa
+var nextB:NodoMapa
 
 func _init() -> void:
-	next= null
+	nextA = null
+	nextB = null
